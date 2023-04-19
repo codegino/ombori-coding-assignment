@@ -1,0 +1,60 @@
+/* Class names can be simple since there will be no collission */
+
+.container {
+  --pulse-color: rgba(57, 207, 57, 0.1);
+  --pulse-size: 89px;
+  width: var(--pulse-size);
+  height: var(--pulse-size);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulse {
+  width: var(--pulse-size);
+  height: var(--pulse-size);
+  border-radius: 50%;
+  background-color: var(--pulse-color);
+  position: absolute;
+}
+
+.pulse__outer {
+  animation: pulse-out 1.5s infinite ease-out;
+}
+
+.pulse__inner {
+  animation: pulse-in 1.5s infinite ease-out;
+}
+
+.core {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #7fb900;
+  position: absolute;
+}
+
+@keyframes pulse-in {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0.1;
+  }
+}
