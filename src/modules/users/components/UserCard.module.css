@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+}
+
+.profileImage {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem;
+}

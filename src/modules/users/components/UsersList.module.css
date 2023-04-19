@@ -1,0 +1,25 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 30rem;
+  flex-basis: 100%;
+}
+
+/* .container::-webkit-scrollbar {
+  display: none;
+} */
+
+.header {
+  height: 80px;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
